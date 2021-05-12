@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="VB_course_firstTask.css">
+</head>
+<body>
+	<nav class="header navbar navbar-dark bg-primary">
+		<a class="navbar-brand">Navbar</a>
+		<form class="form-inline">
+			<select id="themeSelect" class="form-control form-control-sm">
+				<option value="default">theme default</option>
+				<option value="dark">theme dark</option>
+				<option value="light">theme light</option>
+			</select>
+		</form>
+	</nav>
+	<div class="form-sectionmt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col col-8 mx-auto">
+					<div class="card">
+						<div class="card-body">
+							<h2 class="card-title">Add new task</h2>
+							<form name="addTask">
+								<input 
+								type="text" 
+								name="title"
+								id="title"
+								class="form-control"
+								placeholder="Task title">
+								<input 
+								type="text" 
+								name="body"
+								id="body"
+								class="form-control mt-3"
+								placeholder="Task body">
+								<button type="submit" class="btn btn-primary mt-4">
+									Add task
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tasks-list-section mt-5">
+		<div class="container">
+			<ul class="list-group">
+			
+			</ul>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+	<script src="VB_course_firstTask.js"></script>
+</body>
+</html>
